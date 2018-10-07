@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E99CED23-A749-365D-509C-F3B92D260DE5}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_ANDROID;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_WEBCAM;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Unity3.5.6/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Unity3.5.6/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIActionBtn.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIBtnChangePanel.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIBtnLoadScene.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIBtnWWW.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIButton.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIButton3D.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIListButton.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIListItem.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIListItemContainer.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIPanelTab.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIProgressBar.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIRadioBtn.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIRadioBtn3D.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIScrollList.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UISlider.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIStateToggleBtn.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIStateToggleBtn3D.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UITextField.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Controls\UIVirtualScreen.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Management\UIBistateInteractivePanel.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Management\UIInteractivePanel.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Management\UIManager.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Management\UIPanel.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Management\UIPanelManager.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\AutoSpriteControlBase.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\ControlBase.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\EZDragDropHelper.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\IControl.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\IKeyFocusable.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\IPackableControl.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\IUIContainer.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\IUIObject.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\UIPanelBase.cs" />
+     <Compile Include="Assets\Plugins\EZ\GUI\Support\UIScrollKnob.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterAchievement.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterAchievementMetadata.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterBinding.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterEventListener.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterLeaderboard.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterManager.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterPlayer.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterScore.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\testSupport\GameCenterGUIManager.cs" />
+     <Compile Include="Assets\Plugins\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\NativeDialogs\NativeDialogs.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\PackedSprite.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\SimpleSprite.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Sprite.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\SpriteManager.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\SpriteText.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\SuperSprite.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\AutoSprite.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\AutoSpriteBase.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\EZAnimator.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\EZScreenPlacement.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\FontStore.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\ISpriteAggregator.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\ISpriteAnimatable.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\ISpriteMesh.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\ISpritePackable.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\IUseCamera.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\PackableStub.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\SpriteAnimationPump.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\SpriteBase.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\SpriteFont.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\SpriteMesh.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\SpriteMesh_Managed.cs" />
+     <Compile Include="Assets\Plugins\Sprite Scripts\Support\SpriteRoot.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitBinding.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitEventListener.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitManager.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitProduct.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitTransaction.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\testSupport\StoreKitGUIManager.cs" />
+     <None Include="Assets\Plugins\AnBSoft Common\Standard Font\Arial, Fancy.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
+     <None Include="Assets\Plugins\AnBSoft Common\Standard Shaders\Sprite Vertex Colored, Fast.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
+     <None Include="Assets\Plugins\AnBSoft Common\Standard Shaders\Sprite Simple Texture .shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\MultiPlatformToolSuite\Editor\Build Resources\PostProcessAppleScript.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
+     <None Include="Assets\Plugins\AnBSoft Common\Standard Shaders\Sprite Cutout.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
+     <None Include="Assets\Plugins\Android1\AndroidManifest.xml" />
+     <None Include="Assets\____Doc\Requirements.txt" />
+     <None Include="Assets\_Art\Font\PushCoinFont.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\BlendVertexColor.shader" />
+     <None Include="Assets\Plugins\Android1\res\values\styles.xml" />
+     <None Include="Assets\MultiPlatformToolSuite\readme.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
+     <None Include="Assets\Plugins\Android1\res\values-v11\styles.xml" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\multiatlas\source.txt" />
+     <None Include="Assets\Plugins\Android1\res\menu\activity_happy_coin.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
+     <None Include="Assets\Plugins\AnBSoft Common\Standard Shaders\Sprite Vertex Colored.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\demospritecollection\sprites\source.txt" />
+     <None Include="Assets\Plugins\Android1\res\values-v14\styles.xml" />
+     <None Include="Assets\Plugins\Android1\res\values\strings.xml" />
+     <None Include="Assets\MultiPlatformToolSuite\Editor\AssetSettings\AssetSettings.xml" />
+     <None Include="Assets\Plugins\Android1\res\layout\activity_happy_coin.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
